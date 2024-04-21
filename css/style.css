@@ -138,18 +138,21 @@ body {
     height: 75px;
 }
 
-@media screen and (max-width: 500px) {
-    .container {
-        flex-direction: column;
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    /* Стили для мониторов с разрешением 1920x1080 */
+    .header-column h4{
+        margin-left: 20px;
+        margin-top: 50px;
     }
-    .header-elements {
-        justify-content: space-around;
+    .header-column p{
+    margin-top: -50px;
     }
-    .header-button {
-        margin-left: 0;
-        margin-top: 10px;
+    .social{
+        margin-right: 225px;
+        margin-top: 30px;
     }
-}
+    
+   }
 
 @font-face{
     font-family: "TTfirsMedium";

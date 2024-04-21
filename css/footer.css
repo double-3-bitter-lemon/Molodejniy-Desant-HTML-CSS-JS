@@ -127,3 +127,15 @@
     align-items: center;
     height: 100vh; /* Изменено на 100% от высоты видимой области */
 }
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+    /* Стили для мониторов с разрешением 1920x1080 */
+    .countdown2 {
+        display: flex;
+        justify-content: center;
+        height: 266px; /* Уменьшено в 3 раза */
+        align-items: center;
+        margin-right: 250px;
+        margin-bottom: -350px;
+    }
+   }

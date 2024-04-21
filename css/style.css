@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-image: url(../content/backgroundHeader.jpg);
+    background-size: cover; /* Растягивает изображение на весь блок */
+    background-position: center; /* Центрирует изображение */
+    height: 100vh; /* Высота блока равна высоте экрана */
+    background-repeat: no-repeat;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+.header-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Текст белый для контраста */
+    padding: 5px 35px;
+    padding-top: 20px;
+    gap: 20px; /* Расстояние между элементами */
+    background-color: rgb(0, 32, 64, 0.1);
+
+    position: fixed; /* Добавляем фиксированное позиционирование */
+    top: 0; /* Обеспечиваем, чтобы хедер всегда был в верхней части экрана */
+    left: 0; /* Обеспечиваем, чтобы хедер всегда был в левой части экрана */
+    right: 0; /* Обеспечиваем, чтобы хедер всегда был в правой части экрана */
+    z-index: 1000; /* Устанавливаем высокий z-index, чтобы хедер всегда был поверх других элементов */
+}
+
+.header-hidden {
+    top: -100vh; /* Перемещаем хедер вверх за пределы видимой области */
+    transition: top 0.5s ease-in-out; /* Добавляем плавный переход */
+}
+
+.header-logo img {
+    height: 75px; /* Высота логотипа */
+}
+
+.header-elements {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 115px;
+    gap: 80px; /* Расстояние между элементами */
+}
+
+.header-element:last-child {
+    margin-right: 0; /* Убираем отступ справа у последнего элемента */
+}
+
+.header-element {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    font-size: 16px;
+    font-family: "TTfirsMedium";
+}
+
+.header-element:hover {
+    color: #3CADFF;
+}
+
+.header-button {
+    margin-left: auto;
+    background-color: #0194FE;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 32px;
+    border-radius: 10px;
+    margin-left: 137px;
+    font-family: "TTfirsBold";
+    transition: 0.15s linear;
+}
+
+.header-button:hover{
+    background-color: #575b60;
+}
+
+.header-text{
+    width: 414px;
+    height: 147px;
+}
+
+.header-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 26% ;
+    margin-left: 120px;
+}
+
+.header-column h4{
+    color: #fff;
+    font-family: "TTfirsMedium";
+    font-size: 16px;
+}
+
+
+.header-column p{
+    color: #fff;
+    opacity: 0.37;
+    font-family: "TTfirsMedium";
+    font-size: 16px;
+}
+
+.header-big-button button {
+    padding: 25px 76px; /* Устанавливаем внутренний отступ */
+    font-size: 32px; /* Устанавливаем размер шрифта */
+    font-family: "SaarSPDemo"; /* Устанавливаем шрифт */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #575b60;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 170px;
+    gap: 25px;
+}
+
+.social-img{
+    height: 75px;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+    .header-elements {
+        justify-content: space-around;
+    }
+    .header-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@font-face{
+    font-family: "TTfirsMedium";
+    src: url("./fonts/TTfirs/TTFirs-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "TTfirsBold";
+    src: url("./fonts/TTfirs/TTFirs-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "SaarSpDemo";
+    src: url("./fonts/SaarSPdemo/SaarSPDemo.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

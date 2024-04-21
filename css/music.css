@@ -1,0 +1,136 @@
+.audio-player {
+    padding-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-image: url(../content/backgroundMusic.jpg);
+    background-position: center; /* Центрируем фоновое изображение */
+    background-repeat: no-repeat; /* Предотвращаем повторение изображения */
+    background-size: cover; /* Масштабируем изображение так, чтобы оно покрывало весь элемент */
+    height: 900px;
+}
+
+#cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out ;
+}
+
+#cover:hover{
+    transform: scale(1.1);
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#play-pause {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+#back, #forward {
+    background-color: #0054ad;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+#title{
+font-family: "TTfirsBold";
+font-size: 48px;
+background: linear-gradient(215deg, white, #9999);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#author{
+font-family: "TTfirsMedium";
+font-size: 24px;
+color: #3CADFF;
+margin-bottom: 30px;
+}
+
+/* Стилизация трека слайдера */
+input[type="range"] {
+    margin-bottom: 50px;
+    -webkit-appearance: none; /* Убираем стандартное оформление */
+    width: 100%; /* Устанавливаем ширину слайдера */
+    height: 15px; /* Устанавливаем высоту трека */
+    background: #999; /* Цвет фона трека */
+    outline: none; /* Убираем контур */
+    opacity: 0.7; /* Прозрачность */
+    -webkit-transition: .2s; /* Анимация изменения */
+    transition: opacity .2s;
+}
+
+/* Стилизация ползунка слайдера */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартное оформление */
+    appearance: none;
+    width: 50px; /* Ширина ползунка */
+    height: 50px; /* Высота ползунка */
+    background: #3CADFF; /* Цвет ползунка */
+    cursor: pointer; /* Изменяем курсор при наведении */
+    border-radius: 50%; /* Скругление ползунка */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 25px; /* Ширина ползунка */
+    height: 25px; /* Высота ползунка */
+    background: #3CADFF; /* Цвет ползунка */
+    cursor: pointer; /* Изменяем курсор при наведении */
+    border-radius: 50%; /* Скругление ползунка */
+}
+
+/* Стилизация трека при наведении */
+input[type="range"]:hover {
+    opacity: 1; /* Увеличиваем прозрачность при наведении */
+}
+
+/* Стилизация ползунка при наведении */
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #3CADFF; /* Изменяем цвет ползунка при наведении */
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: #3CADFF; /* Изменяем цвет ползунка при наведении */
+}
+
+
+@font-face{
+    font-family: "TTfirsBold";
+    src: url("../fonts/TTfirs/TTFirs-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "TTfirsMedium";
+    src: url("../fonts/TTfirs/TTFirs-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

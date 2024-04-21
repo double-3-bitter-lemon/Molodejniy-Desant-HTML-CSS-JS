@@ -1,0 +1,129 @@
+.footer {
+    position: relative; /* Добавлено */
+    display: flex;
+    flex-direction: column;
+    background-image: url(../content/backgroundFooter.jpg);
+    justify-content: center;
+    height: 1262px; /* Высота блока равна высоте экрана */
+    width: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-position: center center;
+    background-size: cover; /* Растягивает изображение на весь блок */
+}
+
+
+.footer-text {
+    color: white;
+    font-size: 16px;
+    margin-left: 650px; /* Отступ справа для текста */
+    margin-top: 100px;
+    font-family: "TTfirsMedium";
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Высота контента */
+}
+
+.footer-button {
+    margin-bottom: 20px; /* Отступ снизу для кнопки */
+    padding: 25px 64px;
+    width: 330px;
+    background-color: #939393;
+    border: none;
+    border-radius: 10px;
+    font-family: "SaarSPDemo";
+    font-size: 32px;
+    color: #fff;
+    margin-top: 175%;
+}
+
+.button-text {
+    text-align: center;
+    color: rgb(255, 255, 255, 0.37);
+    font-size: 14px;
+    font-family: "TTfirsMedium";
+    margin-bottom: 273px;
+}
+
+.bottom-center {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Высота нижнего блока */
+}
+
+.countdown2 {
+    display: flex;
+    justify-content: center;
+    height: 266px; /* Уменьшено в 3 раза */
+    align-items: center;
+    margin-right: 250px;
+    padding-bottom: 50px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Уменьшено в 3 раза */
+    margin: 0 auto;
+}
+
+.countdown-item2 {
+    text-align: center;
+    margin: 0 20px;
+    padding-top: 450px; /* Уменьшено в 3 раза */
+}
+
+.time-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    width: 120px; /* Уменьшено в 3 раза */
+    background-color: transparent; /* Убрать фон */
+    font-size: 64px; /* Уменьшено в 3 раза */
+    border: 2px solid transparent;
+    border-radius: 10px;
+    border-color: #2A6DB4;
+}
+
+.countdown-number2 {
+    font-family: "BabasNeue";
+    font-size: 64px; /* Уменьшено в 3 раза */
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: #DCF2FC;
+}
+
+.countdown-label2 {
+    font-family: "SaarSPDemo";
+    color: #DCF2FC;
+    font-size: 24px; /* Уменьшено в 3 раза */
+    opacity: 0.64;
+}
+
+.dots2 {
+    margin-top: 425px; /* Уменьшено в 3 раза */
+}
+
+.bottom-center {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Изменено на 100% от высоты видимой области */
+}

@@ -1,0 +1,124 @@
+.container {
+    max-width: 100%; /* Расширяем контейнер до максимальной ширины */
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+.c-item {
+    height: 500px; /* Устанавливаем фиксированную высоту для слайдов */
+}
+
+.c-img {
+    margin-left: 200px;
+    height: 700px; /* Устанавливаем высоту изображения в 500 пикселей */
+    width: 700px; /* Устанавливаем ширину изображения в 500 пикселей */
+    object-fit: contain; /* Изображение будет масштабировано так, чтобы оно полностью покрывало контейнер, сохраняя при этом свои пропорции */
+}
+
+.squad {
+    display: flex;
+    background-image: url(../content/backgroundSquad.jpg);
+    background-size: cover; /* Растягивает изображение на весь блок */
+    height: 900px; /* Высота блока равна высоте экрана */
+    background-repeat: no-repeat;
+    align-items: center;
+    background-position: center center;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px; /* Убедитесь, что высота слайдера соответствует вашим требованиям */
+    flex-direction: column;
+}
+
+.carousel-inner {
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера карусели */
+}
+
+.carousel-item.active {
+    display: block; /* Показываем только активный слайд */
+}
+
+
+.carousel-item .row {
+    width: 1000px; /* Устанавливаем ширину строки равной ширине слайда */
+    display: flex; /* Используем Flexbox для управления расположением элементов внутри строки */
+    flex-direction: row; /* Убедитесь, что элементы располагаются в ряд */
+}
+
+.carousel-item .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Позволяет колонке расти и занимать доступное пространство */
+}
+
+.carousel-caption{
+    display: flex; /* Делаем .carousel-caption flex контейнером */
+    flex-direction: column; /* Располагаем элементы в колонку */
+    align-items: center; /* Выравниваем элементы по левому краю контейнера */
+    justify-content: center; /* Выравниваем элементы по верхнему краю контейнера */
+    width: 500px; /* Устанавливаем ширину контейнера равной ширине родительского элемента */
+    justify-content: right;
+    margin-left: 450px;
+    margin-bottom: 150px;
+    text-align: left;
+}
+
+.carousel-caption h5{
+   font-family: "SaarSPDemo";
+   font-size: 48px;
+   margin-bottom: 20px;
+}
+
+.carousel-caption p{
+    font-family: "TTfirsMedium";
+    font-size: 16px;
+    margin-bottom: 20px;
+ }
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute; /* Фиксированное позиционирование относительно контейнера */
+    top: 50%; /* Центрирование по вертикали */
+    transform: translateY(-50%); /* Корректировка позиции для вертикального центрирования */
+    z-index: 10; /* Установка z-index для обеспечения видимости над слайдами */
+    width: 50px; /* Увеличиваем ширину стрелок */
+    height: 50px; /* Увеличиваем высоту стрелок */
+    background-color: rgba(0, 0, 0, 0.5); /* Добавляем фон для лучшей видимости */
+    border-radius: 50%; /* Скругляем стрелки */
+    color: white; /* Изменяем цвет стрелок */
+}
+
+.carousel-control-prev {
+    left: 10px; /* Отступ слева */
+}
+
+.carousel-control-next {
+    right: 10px; /* Отступ справа */
+}
+
+.carousel-item:not(.active) .c-img {
+    display: none !important;
+}
+
+.carousel-item:not(.active) .carousel-caption h5,
+.carousel-item:not(.active) .carousel-caption p {
+    display: none !important;
+}
+
+@font-face{
+    font-family: "SaarSpDemo";
+    src: url("./fonts/SaarSPdemo/SaarSPDemo.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "TTfirsMedium";
+    src: url("./fonts/TTfirs/TTFirs-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

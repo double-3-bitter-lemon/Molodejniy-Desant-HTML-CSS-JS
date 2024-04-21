@@ -1,0 +1,124 @@
+.container-cards {
+    max-width: 100%; /* Расширяем контейнер до максимальной ширины */
+    margin: 0 auto; /* Центрируем контейнер */
+    display: flex; /* Добавляем flex для центрирования карточек */
+    justify-content: center; /* Центрируем карточки горизонтально */
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку, если не хватает места */
+    gap: 20px; /* Добавляем пространство между карточками */
+    flex-wrap: nowrap;
+    padding-top: 400px;
+}
+
+.pride{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../content/backgroundPride.jpg);
+    justify-content: center;
+    height: 1437px; /* Высота блока равна высоте экрана */
+    width: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-position: center center;
+    background-size: cover; /* Растягивает изображение на весь блок */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    margin: 30px; /* Добавляем небольшое отступ для каждой карточки, чтобы они не касались друг друга */
+    padding-top: 80px;
+    background-color: transparent;
+    border: none;
+}
+
+.card h2{
+    font-family: "SaarSPDemo";
+    font-size: 40px;
+    background: linear-gradient(215deg, white, #9999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.card p{
+    font-family: "TTfirsMedium";
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+.container-atributes h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: "SaarSPDemo";
+    font-size: 48px;
+    background: linear-gradient(215deg, white, #9999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.atributes{
+    margin-top: 50px;
+    max-width: 100%; /* Расширяем контейнер до максимальной ширины */
+    margin: 0 auto; /* Центрируем контейнер */
+    display: flex; /* Добавляем flex для центрирования карточек */
+    justify-content: center; /* Центрируем карточки горизонтально */
+    gap: 200px; /* Добавляем пространство между карточками */
+    flex-wrap: wrap;
+}
+
+.atributes img{
+    margin-bottom: 20px;
+}
+
+.atribute{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 206px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.atribute:hover{
+transform: scale(1.2);
+}
+
+.atribute h3{
+    font-family: "TTfirsBold";
+    font-size: 24px;
+    color: #3CADFF;
+}
+
+.atribute h4{
+    font-family: "TTfirsBold";
+    font-size: 24px;
+    color: #124b73;
+}
+
+@font-face{
+    font-family: "SaarSpDemo";
+    src: url("../fonts/SaarSPdemo/SaarSPDemo.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face{
+    font-family: "TTfirsMedium";
+    src: url("../fonts/TTfirs/TTFirs-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "TTfirsBold";
+    src: url("../fonts/TTfirs/TTFirs-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

@@ -1,0 +1,77 @@
+.countdown {
+    display: flex;
+    background-image: url(../content/backgroundTimer.jpg);
+    justify-content: center;
+    height: 800px;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-size: cover; /* Растягивает изображение на весь блок */
+    background-position: center center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.countdown-item {
+    text-align: center;
+    margin: 0 15px;
+    padding-top: 225px;
+}
+.time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    width: 257px;
+    background-color: #00102B;
+
+    font-size: 160px;
+    border: 2px;
+    border-radius: 10px; /* Скругление углов рамки */
+    border-style: solid;
+    border-color: #2A6DB4; /* Все границы будут синими */
+}
+
+
+.countdown-number {
+    font-family: "BabasNeue";
+    font-size: 160px;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid transparent; /* Добавляем рамку с прозрачным цветом */
+    border-radius: 10px; /* Скругление углов рамки */
+    color: #DCF2FC;
+}
+
+
+.countdown-label {
+    font-family: "SaarSPDemo";
+    color: #DCF2FC;
+    font-size: 48px;
+    opacity: 0.64;
+}
+
+.dots{
+    margin-top: 125px;
+}
+
+@font-face{
+    font-family: "BabasNeue";
+    src: url("../fonts/BabasNeue/BebasNeue-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "SaarSPDemo";
+    src: url("../fonts/SaarSPdemo/SaarSPDemo.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
